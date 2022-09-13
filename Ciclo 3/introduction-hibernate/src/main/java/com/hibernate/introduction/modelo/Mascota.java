@@ -20,15 +20,29 @@ public class Mascota {
     private int edad;
     private String observacion;
     //Constructor
-    public Mascota(String nombre, String apellido, String tipo_mascota, String raza, int edad,
+    public Mascota(String nombre, String apellido, String tipoMascota, String raza, int edad,
             String observacion) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.tipoMascota = tipo_mascota;
+        this.tipoMascota = tipoMascota;
         this.raza = raza;
         this.edad = edad;
         this.observacion = observacion;
     }
+    @Override
+    public String toString(){
+        String inf = "------------------\n";
+        inf += "Id: " + id;
+        inf += "\nNombre: " + nombre;
+        inf += "\nApellido: " + apellido;
+        inf += "\nTipo mascota: " + tipoMascota;
+        inf += "\nRaza: " + raza;
+        inf += "\nEdad: " + edad;
+        inf += "\nObervacion: " + observacion;
+        inf += "\n------------------------\n";
+        return inf;
+    }
+
     public Mascota() {
     }
     //Consultores y modificadores
