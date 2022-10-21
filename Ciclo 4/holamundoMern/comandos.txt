@@ -1,0 +1,6 @@
+npm init
+npm i nodemon -D
+npm install nodemon -g
+nodemon index.js
+node index.js
+npm i express
