@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 //Setting
-app.set('port', process.env.PORT || 5005);
+app.set('port', process.env.PORT || 5000);
 
 /* This is exporting the app instance of the express module. */
 module.exports = app;
